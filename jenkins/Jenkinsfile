@@ -1,1 +1,17 @@
-
+pipeline
+{
+  agent any
+  stages
+  {
+    stage("Conexión con Jenkins")
+    {
+      steps 
+      {
+        echo "Java version:"
+        bat "java --version"
+        echo "Git version:"
+        bat "git --version"
+      }
+    }  
+  }
+}
