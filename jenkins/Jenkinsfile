@@ -8,9 +8,9 @@ pipeline
       steps 
       {
         echo "Java version:"
-        bat "java --version"
+        sh "java --version"
         echo "Git version:"
-        bat "git --version"
+        sh "git --version"
       }
     }  
   }
